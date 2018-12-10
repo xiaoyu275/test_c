@@ -1,16 +1,22 @@
-#include <iostream>
-using	namespace std;
-void read() { cout << "read()\n"; } 
-void sort() { cout << "sort()\n"; } 
-void compact() { cout << "compact()\n"; } 
-void write() { cout << "write()\n"; } 
- 
+#include <iostream> 
+#include <fstream> 
+#include <string> 
+using namespace std;
 int main() 
 { 
- read(); 
- sort(); 
- compact(); 
- write(); 
+  ofstream outfile( "out_file" ); 
+  ifstream infile( "in_file" ); 
+  if ( ! infile ) { 
+    cerr << "error: unable to open input file!\n"; 
+  return -1; 
+ } 
+  if ( ! outfile ) { 
+    cerr << "error: unable to open output file!\n"; 
+  return -2; 
+ } 
+ string word; 
+  while ( infile >> word ) 
+    outfile << word << ' '; 
+  
  return 0; 
 } 
-
