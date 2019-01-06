@@ -1,4 +1,4 @@
-﻿
+
 //#include "stdafx.h"
 
 #include <iostream>
@@ -181,7 +181,7 @@ Box::~Box(void)
 void Box::display2( void )
 {
 	cout << "Box_display2:" << length << endl << breadth << endl << height << endl 
-		<< width << endl << private_test << endl << endl << *ptr;
+		<< width << endl << private_test << endl  << *ptr<< endl;
     //return *ptr;
 }
 

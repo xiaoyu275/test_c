@@ -24,6 +24,12 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="dual_link_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="linux_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -32,7 +38,7 @@
     <ClCompile Include="ConsoleApplication2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\class.cpp">
+    <ClCompile Include="dual_link_list.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
